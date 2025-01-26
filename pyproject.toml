@@ -6,8 +6,11 @@ authors = ["Your Name <you@example.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
-opencv-python = "^4.10.0.84"
+python = ">=3.8,<4.0"
+opencv-python = "^4.0"
+ultralytics = "^8.0"
+torch = "^1.7.0"  # Match the minimum requirement specified by ultralytics
+
 
 [tool.poetry.scripts]
 app = "app.main:main"
